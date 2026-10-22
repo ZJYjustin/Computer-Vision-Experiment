@@ -1,0 +1,106 @@
+{
+  "experiment": "SIFT + FLANN + RANSAC image stitching",
+  "run_directory": "result/20261022-211351-749832",
+  "brightness_directory": "result/20261022-211351-749832/brightness_211354-346362",
+  "versions": {
+    "python": "3.14.6",
+    "opencv": "4.13.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0"
+  },
+  "parameters": {
+    "seed": 42,
+    "opencv_threads": 1,
+    "ratio_threshold": 0.7,
+    "ransac_reprojection_threshold_px": 5.0,
+    "brightness_factor": 0.6,
+    "flann_trees": 5,
+    "flann_checks": 50
+  },
+  "inputs": {
+    "a.jpg": {
+      "sha256": "09f2b925c23ce42e09ad18092eddf9018cdbfbe137867d3a95066ba8015f7d1a",
+      "shape_hwc": [
+        1080,
+        1044,
+        3
+      ]
+    },
+    "b.jpg": {
+      "sha256": "20d91a0ca60ca48733811adf447a91a0e90964993a681e31c61ba3605cd4fe3c",
+      "shape_hwc": [
+        1080,
+        1413,
+        3
+      ]
+    }
+  },
+  "original": {
+    "keypoints_a": 847,
+    "keypoints_b": 1151,
+    "candidate_matches": 847,
+    "ratio_matches": 368,
+    "retention_ratio": 0.4344746162927981,
+    "inliers": 345,
+    "inlier_ratio": 0.9375,
+    "stitched_shape_hwc": [
+      1082,
+      1919,
+      3
+    ],
+    "homography_b_to_a": [
+      [
+        1.0012751964079538,
+        0.00024305176388873993,
+        -874.4026957837359
+      ],
+      [
+        0.0002882710331903553,
+        1.0012326151519466,
+        -0.4994175227128539
+      ],
+      [
+        5.533574635207343e-07,
+        4.2870566758243535e-07,
+        1.0
+      ]
+    ],
+    "mean_inlier_error_px": 0.11877071857452393,
+    "median_inlier_error_px": 0.052193161100149155,
+    "max_inlier_error_px": 3.5918350219726562
+  },
+  "darkened": {
+    "keypoints_a": 847,
+    "keypoints_b": 950,
+    "candidate_matches": 847,
+    "ratio_matches": 290,
+    "retention_ratio": 0.34238488783943327,
+    "inliers": 268,
+    "inlier_ratio": 0.9241379310344827,
+    "stitched_shape_hwc": [
+      1082,
+      1920,
+      3
+    ],
+    "homography_b_to_a": [
+      [
+        1.002310354854919,
+        0.00022888688812760152,
+        -875.3168843147175
+      ],
+      [
+        0.0005219461624048078,
+        1.002268385164191,
+        -0.827837861488091
+      ],
+      [
+        1.2470806438482608e-06,
+        5.526551545409472e-07,
+        0.9999999999999999
+      ]
+    ],
+    "mean_inlier_error_px": 0.15258048474788666,
+    "median_inlier_error_px": 0.07437852025032043,
+    "max_inlier_error_px": 4.661002159118652
+  }
+}
