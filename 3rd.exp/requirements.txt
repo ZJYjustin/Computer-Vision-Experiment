@@ -1,0 +1,8 @@
+# 本次验证使用 Python 3.14.6；建议 Python 3.10 或更新版本。
+# 同一环境只安装一种 OpenCV 包，避免与 opencv-contrib-python 等重复安装。
+numpy>=1.24,<3
+opencv-python>=4.8,<5
+matplotlib>=3.7,<4
+jupyterlab>=4,<5
+nbclient>=0.10,<1
+ipykernel>=6,<8
