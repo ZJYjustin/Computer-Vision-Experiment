@@ -68,6 +68,4 @@ MNIST 包含 60,000 张训练图像和 10,000 张测试图像。每张图像是 
 
 ## 五、实验总结
 
-本实验将 MNIST 图像分类分为数据处理、模型训练和测试评估三个环节。两组配置同时调整了网络结构、激活函数、正则化和优化器，测试结果反映整套配置的差异。若要判断单项改动的影响，可以固定其余条件，再分别进行对照实验。
-
-课程参考见 [老师的实验四文档](https://github.com/Guyudong1/CV_exp/blob/main/4th.exp/README.md)、[基础模型 Notebook](https://github.com/Guyudong1/CV_exp/blob/main/4th.exp/code.ipynb)和[改进模型 Notebook](https://github.com/Guyudong1/CV_exp/blob/main/4th.exp/code%2B.ipynb)。
+本实验将 MNIST 图像分类分为数据处理、模型训练和测试评估三个环节。两组配置同时调整了网络结构、激活函数、正则化和优化器，测试结果反映整套配置的差异。
