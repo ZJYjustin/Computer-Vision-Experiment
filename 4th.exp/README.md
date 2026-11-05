@@ -1,6 +1,5 @@
-# 实验四：多层感知机识别 MNIST 手写数字
+# 实验四：多层感知机识别 MNIST 
 
-姓名：________　学号：________　班级：________
 
 ## 一、实验目的
 
@@ -10,8 +9,8 @@
 
 ## 二、实验环境与运行方法
 
-- 实验代码见 [code.ipynb](code.ipynb)。支持 CPU，检测到可用的 CUDA 时会自动使用 GPU。
-- 从仓库根目录运行以下命令。首次运行 Notebook 时需要联网下载 MNIST。若使用 CUDA 版，按 [PyTorch 官方安装页](https://pytorch.org/get-started/locally/)选择匹配的安装命令。
+- 实验代码见 [code.ipynb](code.ipynb)
+
 
 ```powershell
 python -m pip install torch==2.9.1+cpu torchvision==0.24.1+cpu --index-url https://download.pytorch.org/whl/cpu
