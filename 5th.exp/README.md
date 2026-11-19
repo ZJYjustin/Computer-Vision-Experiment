@@ -113,4 +113,4 @@ python -m jupyterlab
 
 通过分步骤实现训练与评估流程，可以明确区分梯度更新与测试统计，并利用保存的逐轮指标、模型权重和图表复查本次结果。
 
-参考资料为[课程实验五文档](https://github.com/Guyudong1/CV_exp/blob/main/5th.exp/README.md)和[课程原始 Notebook](https://github.com/Guyudong1/CV_exp/blob/main/5th.exp/code.ipynb)。本实验依照其模型和超参数整理，补齐输出目录初始化、分步骤说明和实测结果记录。
+
