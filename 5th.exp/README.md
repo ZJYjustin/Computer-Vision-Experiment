@@ -1,7 +1,7 @@
 # 实验五：CNN 卷积神经网络
 
 
-> 实验代码见 [code.ipynb](code.ipynb)，实测图表、模型权重与指标位于 [result/20261119-134819-193069](result/20261119-134819-193069/metrics.json)。
+> 实验代码见 [code.ipynb](code.ipynb)，实测图表、模型权重与指标位于 [result/final](result/final/metrics.json)。
 
 ## 一、实验目的
 
@@ -66,7 +66,7 @@ python -m jupyterlab
 
 ### 1. 训练过程与最终测试结果
 
-以下数据均来自本次完整运行的 [metrics.json](result/20261119-134819-193069/metrics.json)。
+以下数据均来自本次完整运行的 [metrics.json](result/final/metrics.json)。
 
 | 指标 | 第 1 轮 | 第 30 轮 |
 | --- | ---: | ---: |
@@ -77,7 +77,7 @@ python -m jupyterlab
 
 最终模型在 10,000 张测试图像中正确分类 9,856 张，误判 144 张。训练损失后期总体降低，测试准确率在约 98% 至 99% 之间波动，第 28 轮为 98.80%，第 30 轮回落至 98.56%。训练集上的改善未持续转化为测试集上的改善，说明后期继续训练的收益有限。单次运行的曲线不足以保证其他随机种子下的表现。
 
-![训练与测试曲线](result/20261119-134819-193069/training_curves.png)
+![训练与测试曲线](result/final/training_curves.png)
 
 ### 2. 混淆矩阵
 
@@ -89,21 +89,21 @@ python -m jupyterlab
 | 5 | 3 | 10 |
 | 8 | 2 | 7 |
 
-![最终测试混淆矩阵](result/20261119-134819-193069/confusion_matrix.png)
+![最终测试混淆矩阵](result/final/confusion_matrix.png)
 
 ### 3. 卷积与池化特征图
 
 选取测试集第 0 张图像，真实标签为 7，预测为 7。各层图来自同一输入和最终训练模型。
 
-![特征可视化的输入](result/20261119-134819-193069/feature_input.png)
+![特征可视化的输入](result/final/feature_input.png)
 
-![第一层卷积后的特征图](result/20261119-134819-193069/conv1_features.png)
+![第一层卷积后的特征图](result/final/conv1_features.png)
 
-![第一层池化后的特征图](result/20261119-134819-193069/pool1_features.png)
+![第一层池化后的特征图](result/final/pool1_features.png)
 
-![第二层卷积后的特征图](result/20261119-134819-193069/conv2_features.png)
+![第二层卷积后的特征图](result/final/conv2_features.png)
 
-![第二层池化后的特征图](result/20261119-134819-193069/pool2_features.png)
+![第二层池化后的特征图](result/final/pool2_features.png)
 
 第一层包含 6 个通道，第二层包含 16 个通道，不同通道对同一图像产生不同的响应。两次平均池化分别把空间尺寸从 28×28 压缩到 14×14、从 10×10 压缩到 5×5。特征图展示了网络中间表示的变化，单张图像的响应不能唯一确定每个通道学到的语义。
 
